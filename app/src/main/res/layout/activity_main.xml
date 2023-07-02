@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D2F26B"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="20dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentStart="true"
+       android:id="@+id/bar"
+       >
+
+
+      <ImageButton
+          android:id="@+id/fab"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_alignParentStart="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginBottom="20dp"
+          android:elevation="6dp"
+          android:outlineSpotShadowColor="@color/black"
+          android:background="@drawable/baseline_circle_24"
+          android:backgroundTint="@color/white"
+          android:scaleType="center"
+          android:src="@drawable/round_grid_view_24" />
+      <ImageView
+          android:id="@+id/tab"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="25dp"
+          android:layout_marginTop="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="25dp"
+          android:src="@drawable/menu"
+
+          android:importantForAccessibility="no" />
+
+
+   </RelativeLayout>
+   <RelativeLayout
+       android:id="@+id/img"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/bar"
+       >
+      <TextView
+          android:id="@+id/head"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="monospace"
+          android:text="@string/market_your_growth_strategy"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:textSize="40sp"
+          android:textColor="#000"
+          />
+      <ImageView
+          android:layout_below="@+id/head"
+          android:layout_width="wrap_content"
+          android:layout_height="400dp"
+          android:src="@drawable/uibas"
+          android:importantForAccessibility="no" />
+   </RelativeLayout>
+   <androidx.cardview.widget.CardView
+       android:layout_below="@+id/img"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+
+       >
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="24dp"
+          android:background="#D2F26B">
+
+         <Button
+             android:id="@+id/mainPageRedirect"
+             android:layout_width="205dp"
+             android:layout_height="60dp"
+             android:layout_centerInParent="true"
+             android:layout_marginStart="5dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_marginBottom="5dp"
+             android:backgroundTint="#000000"
+             android:drawableEnd="@drawable/baseline_arrow_circle_right_24"
+             android:text="@string/get_started"
+             android:textSize="18sp" />
+      </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

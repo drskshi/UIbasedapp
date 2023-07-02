@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThirdPage"
+    android:background="#FEFFFE"
+    >
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/backHome"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#FEFFFE"
+            android:drawableBottom="@drawable/baseline_arrow_back_ios_24"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="@string/overview"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="1dp"/>
+
+        <Button
+            android:id="@+id/threedot"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#FEFFFE"
+            android:drawableBottom="@drawable/twotone_more_vert_24" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/nav"
+        android:id="@+id/rightCardView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="200dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#9A177C"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher_round"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yt"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/rightCardView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#9A177C"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher_round"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yt"
+        />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_above="@id/bottmnav"
+        android:backgroundTint="#24282C"
+        app:cardCornerRadius="40dp"
+        android:layout_alignParentStart="true"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great results so far!"
+                android:textSize="22sp"
+                android:textColor="#FCFDFF"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do  you want to see full history
+or send the message to this member?"
+                android:textSize="22sp"
+                android:textColor="#FCFDFF"
+
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/multiplyclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_close_24"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottmnav"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="#FEFFFE"
+        app:itemIconSize="35dp"
+        tools:ignore="VisualLintBottomNav" />
+
+
+</RelativeLayout>

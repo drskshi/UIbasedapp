@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner_items">
+        <item>Flows list</item>
+        <item>Item List</item>
+        <item>ISMT</item>
+        <!-- Add more items as needed -->
+    </array>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Uibasedapp</string>
+    <string name="overview">Overview</string>
+    <string name="welcome_back">Welcome back,</string>
+    <string name="carolina_terner">Carolina Terner</string>
+    <string name="task_based_explanation_process">Task-based explanation process</string>
+    <string name="get_started">Get Started</string>
+    <string name="market_your_growth_strategy">Market your 📈 growth strategy</string>
+    <string name="add_task">Add task</string>
+    <string name="creatives_for_branging">Creatives for branging</string>
+    <string name="verification_process_with_team">Verification process with team</string>
+    <string name="see_all">See all</string>
+</resources>
