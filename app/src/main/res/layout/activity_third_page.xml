@@ -52,11 +52,79 @@
             android:backgroundTint="#FEFFFE"
             android:drawableBottom="@drawable/twotone_more_vert_24" />
     </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@id/belo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#E3F348"
+            app:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Performance"
+                    android:textSize="26dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="30sp"
+                    android:scaleX="4"
+                    android:src="@drawable/baseline_bar_chart_24"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="100dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="70dp">
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/baseline_bar_chart_24">
+
+            </ImageButton>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
     <androidx.cardview.widget.CardView
-        android:layout_below="@id/nav"
+        android:layout_below="@+id/belo"
         android:id="@+id/rightCardView"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         app:cardCornerRadius="200dp"
         android:layout_marginTop="10dp"
@@ -72,30 +140,111 @@
             android:src="@drawable/yt"
             />
     </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_below="@+id/rightCardView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:cardCornerRadius="200dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="#9A177C"
-        >
 
-    <ImageView
+    <LinearLayout
+        android:layout_below="@+id/rightCardView"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@mipmap/ic_launcher_round"
-        android:importantForAccessibility="no"
-        android:scaleType="centerCrop"
-        android:src="@drawable/yt"
-        />
-    </androidx.cardview.widget.CardView>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="70dp">
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/baseline_supervised_user_circle_24">
+
+            </ImageButton>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#E3F348"
+            app:cardCornerRadius="18dp"
+            android:layout_marginStart="60dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="23 📈"
+                    android:textSize="26dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="better results"
+                    android:textSize="20dp"
+                    android:textColor="#827878"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/smallPic"-->
+<!--        android:layout_below="@+id/rightCardView"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:cardCornerRadius="200dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:cardBackgroundColor="#9A177C"-->
+<!--        >-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@mipmap/ic_launcher_round"-->
+<!--        android:importantForAccessibility="no"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/yt"-->
+<!--        />-->
+<!--    </androidx.cardview.widget.CardView>-->
     <androidx.cardview.widget.CardView
-        android:padding="5dp"
+        android:padding="1dp"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bottmnav"
         android:backgroundTint="#24282C"
         app:cardCornerRadius="40dp"
@@ -112,7 +261,7 @@
                 android:textSize="22sp"
                 android:textColor="#FCFDFF"
                 android:textStyle="bold"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginStart="20dp"
                 />
             <TextView
@@ -120,10 +269,9 @@
                 android:layout_height="wrap_content"
                 android:text="Do  you want to see full history
 or send the message to this member?"
-                android:textSize="22sp"
-                android:textColor="#FCFDFF"
-
-                android:layout_marginTop="80dp"
+                android:textSize="20sp"
+                android:textColor="#beffae"
+                android:layout_marginTop="60dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="15dp"
                 />

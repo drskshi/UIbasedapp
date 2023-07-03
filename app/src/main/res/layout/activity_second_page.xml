@@ -62,7 +62,7 @@
                 android:layout_height="97dp"
                 android:background="@mipmap/ic_launcher_round"
                 android:importantForAccessibility="no"
-                android:scaleType="centerInside"
+                android:scaleType="centerCrop"
                 android:src="@drawable/yt" />
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
